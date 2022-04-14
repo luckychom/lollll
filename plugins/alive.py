@@ -30,28 +30,25 @@ async def _human_time_duration(seconds):
     
    
 
-@Client.on_message(command("start") & filters.private & ~filters.edited)
+@Client.on_message(command("/start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/c6e1041c6c9a12913f57a.png",
+        photo=f"https://telegra.ph//file/df6dd71fe22b4c51f8594.jpg",
         caption=f"""**━━━━━━━━━━━━━━━━━━━━━━━━
-💥 ʜᴇʟʟᴏ, ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ
-ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs ...
-┏━━━━━━━━━━━━━━━━━┓
-┣★ ᴄʀᴇᴀᴛᴏʀ : [ᴀᴅɪᴛʏᴀ ʜᴀʟᴅᴇʀ](https://t.me/adityahalder)
-┣★ ᴜᴘᴅᴀᴛᴇs : [ᴀᴅɪᴛʏᴀ sᴇʀᴠᴇʀ](https://t.me/adityaserver)
-┣★ sᴜᴘᴘᴏʀᴛ : [ᴀᴅɪᴛʏᴀ ᴅɪsᴄᴜs](https://t.me/adityadiscus)
-┣★ sᴏᴜʀᴄᴇ › : [ɢᴇᴛ ʀᴇᴘᴏ ʜᴇʀᴇ](https://github.com/mradityaxd/adityaplayer)
-┗━━━━━━━━━━━━━━━━━┛
+𝐈 𝐚𝐦 𝐭𝐡𝐞 𝐛𝐞𝐬𝐭 𝐌𝐮𝐬𝐢𝐜 𝐛𝐨𝐭🎵𝐨𝐟 𝐃𝐚𝐧𝐠𝐞𝐫𝐨𝐮𝐬𝐟𝐢𝐠𝐡𝐭𝐞𝐫𝐬💫
 
-💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ
-ᴅᴍ ᴛᴏ ᴍʏ [ʟᴇɢᴇɴᴅ ᴏᴡɴᴇʀ](https://t.me/adityahalder) ...
+👉𝐃𝐚𝐧𝐠𝐞𝐫𝐨𝐮𝐬:[𝐌𝐀𝐈𝐍 𝐆𝐑𝐎𝐔𝐏](https://t.me/Dangerousfighters)
+👉𝟖𝐱𝐨𝐟𝐟𝐢𝐜𝐢𝐚𝐥:[𝐃𝐔𝐒𝐑𝐀 𝐆𝐑𝐎𝐔𝐏](https://t.me/Clan8Xofficial)
+👉𝐂𝐡𝐚𝐧𝐧𝐞𝐥:[𝐂𝐡𝐚𝐧𝐧𝐞𝐥](https://t.me/DANGEROUSFIGHTER)
+👉𝐦𝐮𝐬𝐢𝐜 𝐰𝐨𝐫𝐥𝐝:[𝐂𝐡𝐚𝐭𝐭𝐢𝐧𝐠 𝐠𝐫𝐨𝐮𝐩](https://t.me/musicworld_ki_duniya)
+
+𝐊𝐨𝐢 𝐢𝐬𝐬𝐮𝐞 𝐡𝐨 𝐭𝐨𝐡 𝐨𝐰𝐧𝐞𝐫 𝐤𝐨 𝐝𝐦 𝐤𝐚𝐫𝐢𝐲𝐨🤧 [𝐓𝐎𝐗𝐈𝐂](https://t.me/wtf_toxicop) ...
 ━━━━━━━━━━━━━━━━━━━━━━━━**""",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ ᴊᴏɪɴ ʜᴇʀᴇ ғᴏʀ ᴜᴘᴅᴀᴛᴇs ❱ ➕", url=f"https://t.me/adityaserver")
+                        "(𝐎𝐮𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥)😝", url=f"https://t.me/DANGEROUSFIGHTER")
                 ]
                 
            ]
@@ -59,32 +56,32 @@ async def start_(client: Client, message: Message):
     )
     
     
-@Client.on_message(commandpro(["/start", "/alive", "aditya"]) & filters.group & ~filters.edited)
+@Client.on_message(commandpro(["/start", "/alive", "Toxic"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/c6e1041c6c9a12913f57a.png",
+        photo=f"https://telegra.ph//file/df6dd71fe22b4c51f8594.jpg",
         caption=f"""""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💥 ᴊᴏɪɴ ʜᴇʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ 💞", url=f"https://t.me/adityadiscus")
+                        "𝐒𝐔𝐏𝐏𝐎𝐑𝐓", url=f"https://t.me/Dangerousfighters")
                 ]
             ]
         ),
     )
 
 
-@Client.on_message(commandpro(["repo", "#repo", "@repo", "/repo", "source"]) & filters.group & ~filters.edited)
+@Client.on_message(commandpro([ "/repo"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/c6e1041c6c9a12913f57a.png",
+        photo=f"https://telegra.ph//file/df6dd71fe22b4c51f8594.jpg",
         caption=f"""""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💥 ᴄʟɪᴄᴋ ᴍᴇ ᴛᴏ ɢᴇᴛ ʀᴇᴘᴏ 💞", url=f"https://github.com/mradityaxd/adityaplayer")
+                        "𝐎𝐖𝐍𝐄𝐑", url=f"https://t.me/wtf_toxicop")
                 ]
             ]
         ),
