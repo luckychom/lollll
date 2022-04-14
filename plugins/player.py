@@ -1,4 +1,4 @@
-# Aditya Halder // @AdityaHalder
+# Toxic  // @wtf_toxicop
 
 import os
 import aiofiles
@@ -89,7 +89,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     draw.text((190, 630), f"Views: {views}", (255, 255, 255), font=font)
     draw.text(
         (190, 670),
-        f"Powered By: Aditya Halder (@AdityaHalder)",
+        f"Powered By: Toxic (@wtf_toxicop)",
         (255, 255, 255),
         font=font,
     )
@@ -99,7 +99,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 
 
 @Client.on_message(
-    commandpro(["/play", "/yt", "/ytp", "play", "yt", "ytp", "@", "#"])
+    commandpro(["/play"])
     & filters.group
     & ~filters.edited
     & ~filters.forwarded
@@ -109,7 +109,7 @@ async def play(_, message: Message):
     global que
     global useer
     
-    lel = await message.reply("**🔎 Sɘɑɤƈɦɩɳʛ ...**")
+    lel = await message.reply("𝐃𝐡𝐮𝐧𝐝𝐫𝐚🤒𝐡𝐮⚡⚡🎵")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -117,7 +117,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "Aditya_Player"
+        user.first_name = "TOXIC"
     usar = user
     wew = usar.id
     try:
@@ -129,24 +129,24 @@ async def play(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "**💥 Ʌʈ🤞Fɩrsʈ 🥀 Ɱɑƙɘ ♥️ Ɱɘ ⭐ Ʌɗɱɩŋ 😎 ...**")
+                        "**𝐏𝐞𝐡𝐥𝐞 𝐀𝐝𝐦𝐢𝐧😝𝐭𝐨𝐡 𝐛𝐚𝐧𝐚𝐨🤧𝐬𝐢𝐫/𝐦𝐚𝐦🎵🌹⚡")
                     return
 
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "** 😎 I🤞ʌɱ 🥀 Ʀɘɑɗy ♥️ Ƭø ⭐ Ƥɭɑy 😎 ...**")
+                        message.chat.id, "𝐒𝐨𝐧𝐠 𝐛𝐚𝐣𝐚𝐧𝐞 𝐤𝐞 𝐋𝐢𝐲𝐞 𝐫𝐞𝐚𝐝𝐲 𝐡𝐮 𝐬𝐢𝐫/𝐦𝐚𝐦🎶⚡💞")
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await lel.edit(
-                        f"**🎸 Ƥɭɘɑsɘ ❤️ Ɱɑŋʋɑɭɭy 🥀 Ʌɗɗ 💫 Ʌssɩsʈɑŋʈ 😔 Øɤ 🎸 Ƈøŋʈɑƈʈ ❤️ ʈø : @AdityaHalder 🥀** ")
+                        f"𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭😝𝐤𝐨 𝐦𝐚𝐧𝐮𝐚𝐥𝐥𝐲💫𝐚𝐝𝐝 𝐤𝐚𝐫𝐨⚡𝐬𝐢𝐫/𝐦𝐚𝐦👈🌹")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"**🎸 Ƥɭɘɑsɘ ❤️ Ɱɑŋʋɑɭɭy 🥀 Ʌɗɗ 💫 Ʌssɩsʈɑŋʈ 😔 Øɤ 🎸 Ƈøŋʈɑƈʈ ❤️ ʈø : @AdityaHalder 🥀 ...*")
+            f"𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭😝𝐤𝐨 𝐦𝐚𝐧𝐮𝐚𝐥𝐥𝐲💫𝐚𝐝𝐝 𝐤𝐚𝐫𝐨⚡𝐬𝐢𝐫/𝐦𝐚𝐦👈🌹")
         return
     
     audio = (
@@ -159,7 +159,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"**💥 Ƥɭɑy 🔊 Ɱʋsɩƈ 💿 Lɘss ⚡️\n🤟 Ƭɦɑɳ⚡️ {DURATION_LIMIT} 💞 Ɱɩɳʋʈɘ ...**"
+                f"𝟔𝟎 𝐦𝐢𝐧𝐮𝐭𝐞𝐬😒𝐬𝐞 𝐮𝐩𝐚𝐫 𝐤𝐚 𝐦𝐮𝐬𝐢𝐜🎶𝐧𝐢 𝐛𝐚𝐭𝐚𝐬𝐤𝐭𝐚😔🌹"
             )
 
         file_name = get_file_name(audio)
@@ -173,8 +173,8 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="💥 Jøɩɳ Ɦɘɤɘ & Sʋƥƥøɤʈ 💞",
-                            url=f"https://t.me/adityadiscus")
+                            text="𝐃𝐀𝐍𝐆𝐄𝐑𝐎𝐔𝐒𝐅𝐈𝐆𝐇𝐓𝐄𝐑𝐒",
+                            url=f"https://t.me/Dangerousfighters")
 
                 ]
             ]
@@ -212,8 +212,8 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="💥 Jøɩɳ Ɦɘɤɘ & Sʋƥƥøɤʈ 💞",
-                            url=f"https://t.me/adityadiscus")
+                            text="💫𝐃𝐀𝐍𝐆𝐄𝐑𝐎𝐔𝐒𝐅𝐈𝐆𝐇𝐓𝐄𝐑𝐒🌹",
+                            url=f"https://t.me/Dangerousfighters")
 
                 ]
             ]
@@ -228,7 +228,7 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="💥 Jøɩɳ Ɦɘɤɘ & Sʋƥƥøɤʈ 💞",
+                            text="💫𝐃𝐀𝐍𝐆𝐄𝐑𝐎𝐔𝐒 𝐅𝐈𝐆𝐇𝐓𝐄𝐑𝐒🌹",
                             url=f"https://t.me/adityadiscus")
 
                 ]
@@ -237,7 +237,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             await lel.edit(
-                f"**💥 Ƥɭɑy 🔊 Ɱʋsɩƈ 💿 Lɘss ⚡️\n🤟 Ƭɦɑɳ⚡️ {DURATION_LIMIT} 💞 Ɱɩɳʋʈɘ ...**"
+                f"𝟔𝟎 𝐦𝐢𝐧𝐮𝐭𝐞𝐬😒𝐬𝐞 𝐮𝐩𝐚𝐫 𝐤𝐚 𝐦𝐮𝐬𝐢𝐜🎶𝐧𝐢 𝐛𝐚𝐭𝐚𝐬𝐤𝐭𝐚😔🌹"
             )
             return
         requested_by = message.from_user.first_name
@@ -246,9 +246,9 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit(
-                "**🤖 Ɠɩⱱɘ 🙃 Ɱʋsɩƈ 💿 Ɲɑɱɘ 😍\n💞 Ƭø 🔊 Ƥɭɑy 🌷...**"
+                "𝐒𝐨𝐧𝐠🎵𝐤𝐚 𝐍𝐚𝐦𝐞💫𝐭𝐨𝐡 𝐥𝐢𝐤𝐡𝐨 𝐬𝐢𝐫/𝐦𝐚𝐦🤤"
             )
-        await lel.edit("**🔄 Ƥɤøƈɘssɩɳʛ ...**")
+        await lel.edit("𝐃𝐡𝐮𝐧𝐝𝐫𝐚💫𝐡𝐮 𝐬𝐚𝐛𝐚𝐫🤒𝐫𝐚𝐤𝐡𝐨 𝐌𝐞𝐫𝐢😍𝐣𝐚𝐚𝐧🌹")
         query = message.text.split(None, 1)[1]
         # print(query)
         try:
@@ -273,7 +273,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await lel.edit(
-                "**🔊 Ɱʋsɩƈ 😕 Ɲøʈ 📵 Føʋɳɗ❗️\n💞 Ƭɤy ♨️ Ʌɳøʈɦɘɤ 🌷...**"
+                "𝐃𝐮𝐬𝐫𝐚 𝐬𝐨𝐧𝐠🎵𝐤𝐚 𝐧𝐚𝐦𝐞💫𝐥𝐢𝐤𝐡𝐨 𝐬𝐢𝐫/𝐦𝐚𝐦🌹"
             )
             print(str(e))
             return
@@ -282,8 +282,8 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="💥 Jøɩɳ Ɦɘɤɘ & Sʋƥƥøɤʈ 💞",
-                            url=f"https://t.me/adityadiscus")
+                            text="💫𝐃𝐀𝐍𝐆𝐄𝐑𝐎𝐔𝐒𝐅𝐈𝐆𝐇𝐓𝐄𝐑𝐒🌹",
+                            url=f"https://t.me/Dangerousfighters")
 
                 ]
             ]
@@ -291,7 +291,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             await lel.edit(
-                f"**💥 Ƥɭɑy 🔊 Ɱʋsɩƈ 💿 Lɘss ⚡️\n🤟 Ƭɦɑɳ⚡️ {DURATION_LIMIT} 💞 Ɱɩɳʋʈɘ ...**"
+                f"𝟔𝟎 𝐦𝐢𝐧𝐮𝐭𝐞𝐬😒𝐬𝐞 𝐮𝐩𝐚𝐫 𝐤𝐚 𝐦𝐮𝐬𝐢𝐜🎶𝐧𝐢 𝐛𝐚𝐭𝐚𝐬𝐤𝐭𝐚😔🌹"
             )
             return
         requested_by = message.from_user.first_name
@@ -305,7 +305,7 @@ async def play(_, message: Message):
         position = await queues.put(chat_id, file=file_path)
         await message.reply_photo(
             photo="final.png",
-            caption="**💥 Ʌɗɩtyɑ🤞Ʌɗɗɘɗ 💿 Søɳʛ❗️\n🔊 Ʌʈ 💞 Ƥøsɩʈɩøɳ » `{}` 🌷 ...**".format(position),
+            caption="𝐓𝐨𝐱𝐢𝐜 𝐦𝐮𝐬𝐢𝐜🎵𝐚𝐝𝐝𝐞𝐝 𝐬𝐨𝐧𝐠💫𝐢𝐧 𝐪𝐮𝐞𝐮𝐞🤒".format(position),
             reply_markup=keyboard,
         )
     else:
@@ -322,37 +322,37 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="**💥 Ʌɗɩtyɑ🤞Mʋsɩƈ 🎸 Nøω 💞\n🔊 Ƥɭɑyɩɳʛ 😍 ØƤ 🥀 ...**".format(),
+            caption="𝐓𝐨𝐱𝐢𝐜 𝐌𝐮𝐬𝐢𝐜🎵𝐢𝐬 𝐧𝐨𝐰 𝐩𝐥𝐚𝐲𝐢𝐧𝐠💫𝐢𝐧 𝐯𝐜🌹".format(),
            )
 
     os.remove("final.png")
     return await lel.delete()
     
     
-@Client.on_message(commandpro(["/pause", "pause"]) & other_filters)
+@Client.on_message(commandpro(["/pause"]) & other_filters)
 @errors
 @authorized_users_only
 async def pause(_, message: Message):
     await clientbot.pytgcalls.pause_stream(message.chat.id)
     await message.reply_photo(
                              photo="https://te.legra.ph/file/f2b5739b266e05c9a2909.png", 
-                             caption="**💥 Ʌɗɩtyɑ 🔈 Mʋsɩƈ🤞Nøω 🥀\n▶️ Ƥɑʋsɘɗ 🌷 ...**"
+                             caption="𝐓𝐨𝐱𝐢𝐜 𝐌𝐮𝐬𝐢𝐜🎵𝐢𝐬 𝐍𝐨𝐰 𝐩𝐚𝐮𝐬𝐞𝐝🌹"
     )
 
 
-@Client.on_message(commandpro(["/resume", "resume"]) & other_filters)
+@Client.on_message(commandpro(["/resume"]) & other_filters)
 @errors
 @authorized_users_only
 async def resume(_, message: Message):
     await clientbot.pytgcalls.resume_stream(message.chat.id)
     await message.reply_photo(
                              photo="https://te.legra.ph/file/391e636040ae189c23cdb.png", 
-                             caption="**💥 Ʌɗɩtyɑ 🔈 Mʋsɩƈ🤞Nøω 🥀\n⏸ Ƥɭɑyɩɳʛ 🌷 ...**"
+                             caption="𝐓𝐨𝐱𝐢𝐜 𝐌𝐮𝐬𝐢𝐜🎵𝐢𝐬 𝐧𝐨𝐰💫𝐀𝐠𝐚𝐢𝐧 𝐩𝐥𝐚𝐲𝐢𝐧𝐠 𝐢𝐧 𝐯𝐜🌹"
     )
 
 
 
-@Client.on_message(commandpro(["/skip", "/next", "skip", "next"]) & other_filters)
+@Client.on_message(commandpro(["/skip"]) & other_filters)
 @errors
 @authorized_users_only
 async def skip(_, message: Message):
@@ -362,7 +362,7 @@ async def skip(_, message: Message):
     for x in clientbot.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text("**💥 Ʌɗɩtyɑ 💞 Ɲøʈɦɩɳʛ 🔇\n🚫 Ƥɭɑyɩɳʛ 🌷 ...**")
+        await message.reply_text("𝐕𝐜😝𝐩𝐞 𝐤𝐮🌹𝐧𝐚 𝐛𝐚𝐣𝐫𝐚💫")
     else:
         queues.task_done(chat_id)
         
@@ -381,11 +381,11 @@ async def skip(_, message: Message):
 
     await message.reply_photo(
                              photo="https://te.legra.ph/file/4e92cde4f29dbecffb7a7.png", 
-                             caption=f'**💥 Ʌɗɩtyɑ 🔈 Mʋsɩƈ🤞Nøω 🥀\n⏩ Sƙɩƥƥɘɗ 🌷 ...**'
+                             caption=f'𝐓𝐨𝐱𝐢𝐜 𝐦𝐮𝐬𝐢𝐜🎵𝐢𝐬 𝐧𝐨𝐰💫𝐬𝐤𝐢𝐩𝐩𝐞𝐝🌹'
    ) 
 
 
-@Client.on_message(commandpro(["/end", "end", "/stop", "stop", "x"]) & other_filters)
+@Client.on_message(commandpro(["/end","/stop"]) & other_filters)
 @errors
 @authorized_users_only
 async def stop(_, message: Message):
@@ -397,11 +397,11 @@ async def stop(_, message: Message):
     await clientbot.pytgcalls.leave_group_call(message.chat.id)
     await message.reply_photo(
                              photo="https://te.legra.ph/file/836a1883cf1dd024f1b7e.png", 
-                             caption="**💥 Ʌɗɩtyɑ 🔈 Mʋsɩƈ🤞Nøω 🥀\n❌ Sʈøƥƥɘɗ 🌷 ...**"
+                             caption="𝐓𝐨𝐱𝐢𝐜 𝐦𝐮𝐬𝐢𝐜🎵𝐢𝐬 𝐧𝐨𝐰💫𝐒𝐭𝐨𝐩𝐩𝐞𝐝🌹"
     )
 
 
-@Client.on_message(commandpro(["reload", "refresh"]))
+@Client.on_message(commandpro(["/reload", "/refresh"]))
 @errors
 @authorized_users_only
 async def admincache(client, message: Message):
@@ -415,5 +415,5 @@ async def admincache(client, message: Message):
 
     await message.reply_photo(
                               photo="https://te.legra.ph/file/02306701e296bcf8634fa.png",
-                              caption="**💥 Ʌɗɩtyɑ 🔈 Mʋsɩƈ🤞Nøω 🥀\n🔥 Ʀɘɭøɑɗɘɗ 🌷 ...**"
+                              caption="𝐓𝐨𝐱𝐢𝐜 𝐦𝐮𝐬𝐢𝐜🎵𝐢𝐬 𝐧𝐨𝐰💫𝐫𝐞𝐥𝐨𝐚𝐝𝐞𝐝🌹"
     )
