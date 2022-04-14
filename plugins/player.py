@@ -129,7 +129,7 @@ async def play(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "**𝐏𝐞𝐡𝐥𝐞 𝐀𝐝𝐦𝐢𝐧😝𝐭𝐨𝐡 𝐛𝐚𝐧𝐚𝐨🤧𝐬𝐢𝐫/𝐦𝐚𝐦🎵🌹⚡")
+                        "𝐏𝐞𝐡𝐥𝐞 𝐀𝐝𝐦𝐢𝐧😝𝐭𝐨𝐡 𝐛𝐚𝐧𝐚𝐨🤧𝐬𝐢𝐫/𝐦𝐚𝐦🎵🌹⚡")
                     return
 
                 try:
@@ -164,7 +164,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://te.legra.ph/file/ed6920a2f0ab5af3fd55d.png"
+        thumb_name = "https://telegra.ph//file/df6dd71fe22b4c51f8594.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -221,7 +221,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://te.legra.ph/file/ed6920a2f0ab5af3fd55d.png"
+            thumb_name = "https://telegra.ph//file/df6dd71fe22b4c51f8594.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
@@ -229,7 +229,7 @@ async def play(_, message: Message):
                 [
                         InlineKeyboardButton(
                             text="💫𝐃𝐀𝐍𝐆𝐄𝐑𝐎𝐔𝐒 𝐅𝐈𝐆𝐇𝐓𝐄𝐑𝐒🌹",
-                            url=f"https://t.me/adityadiscus")
+                            url=f"https://t.me/Dangerousfighters")
 
                 ]
             ]
@@ -291,7 +291,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             await lel.edit(
-                f"𝟔𝟎 𝐦𝐢𝐧𝐮𝐭𝐞𝐬😒𝐬𝐞 𝐮𝐩𝐚𝐫 𝐤𝐚 𝐦𝐮𝐬𝐢𝐜🎶𝐧𝐢 𝐛𝐚𝐭𝐚𝐬𝐤𝐭𝐚😔🌹"
+                f"𝟔𝟎 𝐦𝐢𝐧𝐮𝐭𝐞𝐬😒𝐬𝐞 𝐮𝐩𝐚𝐫 𝐤𝐚 𝐦𝐮𝐬𝐢𝐜🎶𝐧𝐢 𝐛𝐚j𝐚𝐬𝐤𝐭𝐚😔🌹"
             )
             return
         requested_by = message.from_user.first_name
@@ -335,7 +335,7 @@ async def play(_, message: Message):
 async def pause(_, message: Message):
     await clientbot.pytgcalls.pause_stream(message.chat.id)
     await message.reply_photo(
-                             photo="https://te.legra.ph/file/f2b5739b266e05c9a2909.png", 
+                             photo="https://telegra.ph//file/df6dd71fe22b4c51f8594.jpg", 
                              caption="𝐓𝐨𝐱𝐢𝐜 𝐌𝐮𝐬𝐢𝐜🎵𝐢𝐬 𝐍𝐨𝐰 𝐩𝐚𝐮𝐬𝐞𝐝🌹"
     )
 
@@ -346,7 +346,7 @@ async def pause(_, message: Message):
 async def resume(_, message: Message):
     await clientbot.pytgcalls.resume_stream(message.chat.id)
     await message.reply_photo(
-                             photo="https://te.legra.ph/file/391e636040ae189c23cdb.png", 
+                             photo="https://telegra.ph//file/df6dd71fe22b4c51f8594.jpg", 
                              caption="𝐓𝐨𝐱𝐢𝐜 𝐌𝐮𝐬𝐢𝐜🎵𝐢𝐬 𝐧𝐨𝐰💫𝐀𝐠𝐚𝐢𝐧 𝐩𝐥𝐚𝐲𝐢𝐧𝐠 𝐢𝐧 𝐯𝐜🌹"
     )
 
@@ -362,7 +362,7 @@ async def skip(_, message: Message):
     for x in clientbot.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text("𝐕𝐜😝𝐩𝐞 𝐤𝐮🌹𝐧𝐚 𝐛𝐚𝐣𝐫𝐚💫")
+        await message.reply_text("𝐕𝐜😝𝐩𝐞 𝐤𝐮x🌹𝐧𝐚 𝐛𝐚𝐣𝐫𝐚💫")
     else:
         queues.task_done(chat_id)
         
@@ -380,7 +380,7 @@ async def skip(_, message: Message):
 
 
     await message.reply_photo(
-                             photo="https://te.legra.ph/file/4e92cde4f29dbecffb7a7.png", 
+                             photo="https://telegra.ph//file/df6dd71fe22b4c51f8594.jpg", 
                              caption=f'𝐓𝐨𝐱𝐢𝐜 𝐦𝐮𝐬𝐢𝐜🎵𝐢𝐬 𝐧𝐨𝐰💫𝐬𝐤𝐢𝐩𝐩𝐞𝐝🌹'
    ) 
 
@@ -396,7 +396,7 @@ async def stop(_, message: Message):
 
     await clientbot.pytgcalls.leave_group_call(message.chat.id)
     await message.reply_photo(
-                             photo="https://te.legra.ph/file/836a1883cf1dd024f1b7e.png", 
+                             photo="https://telegra.ph//file/df6dd71fe22b4c51f8594.jpg", 
                              caption="𝐓𝐨𝐱𝐢𝐜 𝐦𝐮𝐬𝐢𝐜🎵𝐢𝐬 𝐧𝐨𝐰💫𝐒𝐭𝐨𝐩𝐩𝐞𝐝🌹"
     )
 
@@ -414,6 +414,6 @@ async def admincache(client, message: Message):
     )
 
     await message.reply_photo(
-                              photo="https://te.legra.ph/file/02306701e296bcf8634fa.png",
+                              photo="https://telegra.ph//file/df6dd71fe22b4c51f8594.jpg",
                               caption="𝐓𝐨𝐱𝐢𝐜 𝐦𝐮𝐬𝐢𝐜🎵𝐢𝐬 𝐧𝐨𝐰💫𝐫𝐞𝐥𝐨𝐚𝐝𝐞𝐝🌹"
     )
