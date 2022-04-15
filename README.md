@@ -18,7 +18,7 @@ Deploy To Railway
 
  Get String Session
 
-[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@AdityaHalder/StringSession)
+[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@Toxicrepel/TOXICREPEL1)
 
 
 
